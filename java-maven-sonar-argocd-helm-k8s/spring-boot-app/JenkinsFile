@@ -12,11 +12,6 @@ pipeline {
         //git branch: 'main', url: 'https://github.com/mohananarasimha/Jenkins-Argocd'
       }
     }
-    stage('Cleanup') {
-      steps {
-        sh 'rm -rf target/*'
-      }
-    }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
